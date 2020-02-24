@@ -17,5 +17,5 @@ error Command failed with exit code 2.
 Run `yarn bootstrap` to install all dependencies and kick off the first build. This will show the failure.
 
 ## Subsequent Runs
-- Run `yarn clean && yarn build` to reproduce the issue
+- Run `yarn clean && yarn build` to reproduce the issue. Run `yarn build` again without `yarn clean` and you will see no error.
 - Run `yarn clean && yarn build:fixed` to show the everything okay when not using ForkTsCheckerWebpackPlugin.
