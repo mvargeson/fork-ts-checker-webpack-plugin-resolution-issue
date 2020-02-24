@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": "./packages",
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "stripInternal": true,
+    "target": "es2016",
+    "lib": [
+      "es5",
+      "es6",
+      "esnext.asynciterable"
+    ],
+    "paths": {
+      "@namespace/bar/*": ["./bar/src/*"],
+      "@namespace/baz/*": ["./baz/src/*"],
+      "@namespace/foo/*": ["./foo/src/*"]
+    }
+  }
+}
