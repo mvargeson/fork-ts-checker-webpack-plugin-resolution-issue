@@ -13,9 +13,8 @@ error Command failed with exit code 2.
 - packages/foo does not depend on anything and exports Foo
 ```
 
-## Initial Run
-Run `yarn bootstrap` to install all dependencies and kick off the first build. This will show the failure.
-
-## Subsequent Runs
-- Run `yarn clean && yarn build` to reproduce the issue. Run `yarn build` again without `yarn clean` and you will see no error.
-- Run `yarn clean && yarn build:fixed` to show the everything okay when not using ForkTsCheckerWebpackPlugin.
+## How To Reproduce
+1. Run `yarn bootstrap` from the root to install all dependencies and kick off the first build. This will show the failure.
+2. Run `yarn build` from the root. This will not show the failure
+3. Run `yarn clean && yarn build` from the root. This will show the failure. Running without `yarn clean` will not show the failure.
+4. Run `yarn clean && yarn build:fixed` to show the everything okay when not using ForkTsCheckerWebpackPlugin.
